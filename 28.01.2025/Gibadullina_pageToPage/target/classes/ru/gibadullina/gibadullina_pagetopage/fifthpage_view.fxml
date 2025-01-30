@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.gibadullina.gibadullina_pagetopage.FifthController">
+   <children>
+      <BorderPane layoutX="178.0" layoutY="64.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <VBox prefHeight="60.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="100.0" style="-fx-background-color: #575757;">
+                     <children>
+                        <Button fx:id="backButton" mnemonicParsing="false" onAction="#backButtonOnAction" text="Назад">
+                           <HBox.margin>
+                              <Insets bottom="1.0" left="1.0" right="20.0" top="1.0" />
+                           </HBox.margin>
+                        </Button>
+                        <Label fx:id="titleLabel" text="MARATHON SKILLS 2016" textFill="WHITE">
+                           <HBox.margin>
+                              <Insets bottom="1.0" left="20.0" right="180.0" top="1.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="logoutButton" mnemonicParsing="false" onAction="#logoutButtonOnAction" text="Logout">
+                           <HBox.margin>
+                              <Insets bottom="1.0" left="70.0" right="1.0" top="1.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </top>
+         <center>
+            <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="21.0" prefWidth="600.0">
+                     <children>
+                        <Label text="Регистрация на марафон" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="TOP_CENTER" prefHeight="16.0" prefWidth="600.0">
+                     <children>
+                        <Label text="Пожалуйста заполните информацию, чтобы зарегистрироваться на Marathon Skills 2016" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="TOP_CENTER" prefHeight="17.0" prefWidth="600.0">
+                     <children>
+                        <Label text="проводимом в Москве, Россия. С вами свяжутся после регистрации для уточнения оплаты" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="TOP_CENTER" prefHeight="15.0" prefWidth="600.0">
+                     <children>
+                        <Label text="и другой информации." />
+                     </children>
+                  </HBox>
+                  <FlowPane prefHeight="221.0" prefWidth="600.0">
+                     <children>
+                        <VBox prefHeight="79.0" prefWidth="271.0">
+                           <children>
+                              <Label text="Вид марафона">
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets bottom="1.0" left="50.0" right="1.0" top="1.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <CheckBox fx:id="fullmarCheckBox" mnemonicParsing="false" text="42км - Полный марафон ($145)">
+                                 <VBox.margin>
+                                    <Insets bottom="1.0" left="30.0" right="1.0" top="1.0" />
+                                 </VBox.margin>
+                              </CheckBox>
+                              <CheckBox fx:id="halfmarCheckBox" mnemonicParsing="false" text="21 км - Полумарафон ($75)">
+                                 <VBox.margin>
+                                    <Insets bottom="1.0" left="30.0" right="1.0" top="1.0" />
+                                 </VBox.margin>
+                              </CheckBox>
+                              <CheckBox fx:id="littlemarCheckBox" mnemonicParsing="false" text="5км - Малая дистанция ($20)">
+                                 <VBox.margin>
+                                    <Insets bottom="1.0" left="30.0" right="1.0" top="1.0" />
+                                 </VBox.margin>
+                              </CheckBox>
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="123.0" prefWidth="327.0">
+                           <children>
+                              <Label text="Варианты комплектов">
+                                 <VBox.margin>
+                                    <Insets bottom="1.0" left="50.0" right="1.0" top="1.0" />
+                                 </VBox.margin>
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font>
+                              </Label>
+                              <RadioButton fx:id="varARadioButton" mnemonicParsing="false" text="№ бегуна + RFID браслет">
+                                 <graphic>
+                                    <Label text="Вариант А ($0):">
+                                       <font>
+                                          <Font name="System Bold" size="13.0" />
+                                       </font>
+                                    </Label>
+                                 </graphic>
+                              </RadioButton>
+                              <RadioButton fx:id="varBRadioButton" mnemonicParsing="false" text="Вар. А + бейсболка + вода">
+                                 <graphic>
+                                    <Label text="Вариант B ($20):">
+                                       <font>
+                                          <Font name="System Bold" size="13.0" />
+                                       </font>
+                                    </Label>
+                                 </graphic>
+                              </RadioButton>
+                              <RadioButton fx:id="varCRadioButton" mnemonicParsing="false" text="Вар. B + футболка + сувениры">
+                                 <graphic>
+                                    <Label text="Вариант C ($45):">
+                                       <font>
+                                          <Font name="System Bold" size="13.0" />
+                                       </font>
+                                    </Label>
+                                 </graphic>
+                              </RadioButton>
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="97.0" prefWidth="303.0">
+                           <children>
+                              <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                                 <children>
+                                    <Label text="Детали спонсорства">
+                                       <font>
+                                          <Font name="System Bold" size="13.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets bottom="5.0" />
+                                 </VBox.margin>
+                              </HBox>
+                              <HBox alignment="TOP_RIGHT" prefHeight="100.0" prefWidth="200.0">
+                                 <children>
+                                    <Label text="Взнос:">
+                                       <HBox.margin>
+                                          <Insets right="5.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <ChoiceBox fx:id="contributionChoiceBox" prefWidth="150.0">
+                                       <HBox.margin>
+                                          <Insets right="10.0" />
+                                       </HBox.margin>
+                                    </ChoiceBox>
+                                    <CheckBox fx:id="contributionCheckBox" mnemonicParsing="false" />
+                                 </children>
+                              </HBox>
+                              <HBox alignment="TOP_RIGHT" prefHeight="100.0" prefWidth="200.0">
+                                 <children>
+                                    <Label text="Сумма взноса:">
+                                       <HBox.margin>
+                                          <Insets right="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <TextField fx:id="sumTextField">
+                                       <HBox.margin>
+                                          <Insets right="10.0" />
+                                       </HBox.margin>
+                                    </TextField>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets top="5.0" />
+                                 </VBox.margin>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                                 <children>
+                                    <Button fx:id="registerButton" mnemonicParsing="false" text="Регистрация">
+                                       <HBox.margin>
+                                          <Insets right="20.0" />
+                                       </HBox.margin>
+                                    </Button>
+                                    <Button fx:id="cancelButton" mnemonicParsing="false" text="Отмена" />
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets top="5.0" />
+                                 </VBox.margin>
+                              </HBox>
+                           </children>
+                        </VBox>
+                        <VBox alignment="TOP_CENTER" prefHeight="111.0" prefWidth="296.0">
+                           <children>
+                              <Label text="Регистрационный взнос">
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Label fx:id="sumvalueLabel" text="\$0" />
+                           </children>
+                        </VBox>
+                     </children>
+                  </FlowPane>
+               </children>
+            </VBox>
+         </center>
+         <bottom>
+            <VBox prefHeight="30.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #575757;">
+                     <children>
+                        <Label fx:id="timeLabel" text="18 дней 8 часов и 17 минут до старта марафона! " textFill="WHITE">
+                           <HBox.margin>
+                              <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </bottom>
+      </BorderPane>
+   </children>
+</AnchorPane>

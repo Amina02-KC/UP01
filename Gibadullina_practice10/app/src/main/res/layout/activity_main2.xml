@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+
+    <TextView
+        android:id="@+id/title2_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="Задание 2"
+        android:textSize="30dp">
+    </TextView>
+
+
+    <LinearLayout
+        android:id="@+id/panel1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title2_tv">
+
+        <EditText
+            android:id="@+id/x1_et"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Введите x1"
+            android:textSize="20dp"
+            android:layout_margin="5dp" >
+        </EditText>
+
+        <EditText
+            android:id="@+id/y1_et"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Введите y1"
+            android:textSize="20dp"
+            android:layout_margin="5dp" >
+        </EditText>
+
+        <Button
+            android:id="@+id/create1_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Задать"
+            android:textSize="20dp">
+        </Button>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/panel2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/panel1">
+
+        <EditText
+            android:id="@+id/x2_et"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Введите x2"
+            android:textSize="20dp"
+            android:layout_margin="5dp" >
+        </EditText>
+
+        <EditText
+            android:id="@+id/y2_et"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Введите y2"
+            android:textSize="20dp"
+            android:layout_margin="5dp" >
+        </EditText>
+
+        <Button
+            android:id="@+id/create2_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Задать"
+            android:textSize="20dp">
+        </Button>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/s2_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/panel2"
+        android:layout_marginTop="50dp"
+        android:text="S = "
+        android:textSize="20dp"
+        tools:layout_editor_absoluteX="174dp"
+        tools:layout_editor_absoluteY="333dp">
+    </TextView>
+
+    <TextView
+        android:id="@+id/p_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/s2_tv"
+        android:layout_marginTop="30dp"
+        android:text="P = "
+        android:textSize="20dp"
+        tools:layout_editor_absoluteX="174dp"
+        tools:layout_editor_absoluteY="333dp">
+    </TextView>
+
+    <Button
+        android:id="@+id/calc2_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:onClick="OnClick2"
+        android:text="Вычислить"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/p_tv" />
+
+    <Button
+        android:id="@+id/thirdpage_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:onClick="startThirdActivity"
+        android:text="Задание 3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calc2_btn" />
+</androidx.constraintlayout.widget.ConstraintLayout>

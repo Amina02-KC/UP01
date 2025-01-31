@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity3">
+
+    <TextView
+        android:id="@+id/title3_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="Задание 3"
+        android:textSize="30dp">
+    </TextView>
+
+
+    <LinearLayout
+        android:id="@+id/panel3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title3_tv">
+
+        <EditText
+            android:id="@+id/chocokg_et"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Введите кг конфет"
+            android:textSize="20dp"
+            android:layout_margin="5dp" >
+        </EditText>
+
+        <EditText
+            android:id="@+id/chocoprice_et"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Введите стоимость"
+            android:textSize="20dp"
+            android:layout_margin="5dp" >
+        </EditText>
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/panel4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/panel3">
+
+        <EditText
+            android:id="@+id/toffeekg_et"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Введите кг ирисок"
+            android:textSize="20dp"
+            android:layout_margin="5dp" >
+        </EditText>
+
+        <EditText
+            android:id="@+id/toffeeprice_et"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Введите стоимость"
+            android:textSize="20dp"
+            android:layout_margin="5dp" >
+        </EditText>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/onechocokg_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/panel4"
+        android:layout_marginTop="50dp"
+        android:text="1 кг конфет = "
+        android:textSize="20dp"
+        tools:layout_editor_absoluteX="174dp"
+        tools:layout_editor_absoluteY="333dp">
+    </TextView>
+
+    <TextView
+        android:id="@+id/onetoffeekg_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/onechocokg_tv"
+        android:layout_marginTop="30dp"
+        android:text="1 кг ирисок = "
+        android:textSize="20dp"
+        tools:layout_editor_absoluteX="174dp"
+        tools:layout_editor_absoluteY="333dp">
+    </TextView>
+
+    <TextView
+        android:id="@+id/comp_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/onetoffeekg_tv"
+        android:layout_marginTop="30dp"
+        android:text="Результат: "
+        android:textSize="20dp"
+        tools:layout_editor_absoluteX="174dp"
+        tools:layout_editor_absoluteY="333dp">
+    </TextView>
+
+    <Button
+        android:id="@+id/calc3_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:onClick="OnClick3"
+        android:text="Вычислить"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/comp_tv" />
+
+    <Button
+        android:id="@+id/firstpage_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:onClick="startMainActivity"
+        android:text="Задание 1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calc3_btn" />
+</androidx.constraintlayout.widget.ConstraintLayout>
